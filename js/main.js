@@ -1,34 +1,24 @@
 let  listeMots = ["Cachalot", "Pétunia","Serviette"]
+let listePhrases = ["Pas de panique!","La vie et l'univers","Merci pour le poisson"]
 let score = 0
 
 
-let motUtilisateur = prompt("Entrez le mot " + listeMots [0])
 
-if (motUtilisateur === listeMots[0]){
-    console.log("bravo")
-    score = score + 1
-}
-else{
-    console.log("Erreur")
-}
-
-motUtilisateur = prompt("Entrez le mot " + listeMots [1])
-if (motUtilisateur === listeMots[1]){
-    console.log("bravo")
-     score = score + 1
-}
-else{
-    console.log("Erreur")
-}
-
-motUtilisateur = prompt("Entrez le mot " + listeMots [2])
-if (motUtilisateur === listeMots[2]){
-    console.log("bravo")
-     score = score + 1
-}
-else{
-    console.log("Erreur")
-}
+let choixUtilisateur = prompt(" veuiller choisir ")
 
 
-console.log(score)
+
+for(i = 0; i <listeMots.length; i++ ){
+   let motUtilisateur = prompt("Entrez le mot " + listeMots [i])
+    if (motUtilisateur === listeMots[i]){
+        score = score + 1
+    }
+}
+
+console.log("votre score est de " + score + " sur" + listeMots.length)
+
+
+
+
+
+
