@@ -29,7 +29,11 @@ if (choixUtilisateur == "mots") {
 }
 
 
+function retournerMessageScore(score, nombreQuestion){
+    let message = "votre score est de " + score + " sur " +nombreQuestion
+    return message
+}
 
 
-
-
+let nouveauMessage = retournerMessageScore(5, 10)
+console.log(nouveauMessage)
